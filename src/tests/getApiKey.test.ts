@@ -1,6 +1,4 @@
 import { describe, expect, test } from "vitest";
-import { getAPIKey } from "src/api/auth";
-import { IncomingHttpHeaders } from "http";
 
 const person = {
   isActive: true,
@@ -8,7 +6,6 @@ const person = {
 };
 
 
-const apikey = getAPIKey(IncomingHttpHeaders());
 
 describe("person", () => {
   test("person is defined", () => {
